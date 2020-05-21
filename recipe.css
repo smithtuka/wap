@@ -21,7 +21,15 @@ body{
     background-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
+
+    
 }
+.container {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+}
+
 a{
    color: #A4A400; 
 }
@@ -32,10 +40,6 @@ a{
 
 .cake{
     text-decoration: line-through;
-}
-
-.footer{
-    text-align: left;
 }
 
 blockquote{
