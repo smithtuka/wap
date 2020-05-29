@@ -1,3 +1,5 @@
+"use strict";
+
 var size = 12;
 // hello world part
 function helloWorld(){
