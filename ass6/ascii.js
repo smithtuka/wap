@@ -1,8 +1,62 @@
+/*
+window.onload = function(){
+
+document.getElementById("animation").onchange = updateTextArea;
+
+function updateTextArea(){
+    let textarea = document.getElementById("text-area");
+    const animation = document.getElementById("animation");
+    const returned = animation.options[animation.selectedIndex].value;
+
+    if(returned === "Exercise"){
+        textarea.value = EXERCISE;
+    }
+
+    switch(returned){
+        case "Exercise":
+            textarea.value = EXERCISE;
+            break;
+        case "Juggler":
+            textarea.value = JUGGLER;
+            break;
+        case "Bike":
+            textarea.value = BIKE;
+            break;
+        case "Dive":
+            textarea.value = DIVE;
+            break;
+        default:
+            textarea.value = BLANK;
+    }
+}
+
+document.getElementById("start").onclick = start;
+
+function start(){
+    let textarea = document.getElementById("text-area");
+    const animation = document.getElementById("animation");
+    const returned = animation.options[animation.selectedIndex].value;
+
+    const myArray = ["a", "e", "i", "o", "u"];
+    switch(returned){
+        case "Exercise":
+            textarea.value = "";
+            let index = 0;
+            let interval = setInterval(function(){
+                textarea.value = myArray[Index++]
+            });
+
+    }
+}
+
+}
+*/
+
 /* global ANIMATIONS */
 
 "use strict";
 window.onload = function () {
-    //let ANIMATIONS = [];
+    
 
     document.getElementById("fontsize").onchange = function () {
         document.getElementById("text-area").style.fontSize = document.getElementById("fontsize").value;
@@ -21,9 +75,9 @@ window.onload = function () {
 };
 
 
-var timer = null;
-var framesCout = 0;
-var animationArrFrames;
+let timer = null;
+let framesCout = 0;
+let animationArrFrames;
 
 function start() {
     document.getElementById("start").disabled = true;
@@ -74,3 +128,28 @@ function draw() {
         framesCout = 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
