@@ -6,7 +6,8 @@
     <title>Accounts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="account.css" type="text/css" rel="stylesheet">
-    <script src="account.js" ></script>
+    <script defer src="account.js" ></script> 
+    <!--get more clarity of use of window.onload vs defer // both seem to solve da problem-->
 </head>
 
 <body>
@@ -14,18 +15,54 @@
         <h1>Account Handling System</h1>
     </header>
     <div class ="container">
+        <h2>Create Account</h2>
         <div class ="container2">
+            
+            <fieldset class="pdetails">
+                <legend> Personal Details:</legend>
+                <label for="fName"> First Name</label>
+                <input type="text" name="fName" id ="fName" />
+                <label for="lName"> Last Name</label>
+                <input type="text" name="lName" id ="lName" />
+                <label>Phone <input type="tel" name="mobile" id ="tel"/></label>
+                <label> Email
+                <input type="email" name="mail" id ="mail" /> </label>
+            </fieldset>
+            <fieldset class="accType">
+                <legend>Choose ccount type: </legend>
+                <select id="accType" name="accType" >
+                    
+                    <option value="savings"> Savings</option>
+                    <option value="checking"> Checking</option>
+                    <option value="current"> Current</option>
+                    <option value="fixed" selected> Fixed Deposit</option>
+    
+                </select>
+
+            </fieldset>
+
+            <fieldset class ="Deposit">
+                <legend>Initial Deposit:</legend>
+                <label>Date<input type ="date" id="date" /> </label>
+                <!-- <label>Currency <input type ="text" id="currency" /> </label> -->
+                <select id="currency" name="currency" >
+                    
+                    <option value="USD" selected> US Dollar</option>
+                    <option value="UGX"> Uganda Shilling</option>
+                    <option value="Rs."> Indian Rupees</option>
+                    <option value="CAD" > Canadian Dollar</option>
+    
+                </select>
+                <label>Amount <input type ="text" id="amount" pattern="[\d]{1,}" title="kindly enter valid amount"/> </label>
+                
+            </fieldset>
+
+            <button id="btn">Submit</button>
+            <h2>List of Accounts</h2>
+            <textarea cols=80 rows=25 id ="text-area">Accounts</textarea>
 
             
-            <label for ="accountType">Select your account type: </label>
-            <select id="accountType" name="accountType">
-                
-                <option> Savings</option>
-                <option> Checking</option>
-                <option> Current</option>
-                <option selected> Fixed Deposit</option>
 
-            </select>
         </div>
 
         <div id="validate">

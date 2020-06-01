@@ -3,7 +3,7 @@ body{
     text-align: center;
     margin-left: auto;
     margin-right:auto;
-    background-color:#CCCCFF;
+    background-color:rgb(201, 212, 191);
     font-family: sans-serif;
     font-size: 14pt;
 }
@@ -31,3 +31,33 @@ header{
     right: 0px;
     bottom: 0px;
 }
+#btn{
+    display: block;
+    width: fit-content;
+    font-size: 0.9em;
+    margin-left: 15px;
+    padding: 3px;
+    color: green;
+}
+div{
+    margin: 10px;
+    outline: none;
+}
+textarea{
+    font-family: monospace;
+    font-size: 12px;
+    margin-left: 100px;
+    padding-top:0px;
+    margin-top:0px;
+    color: green;
+}
+select, label{
+    font-size: 0.9em;
+    color: white;
+    white-space: nowrap; 
+}
+input[type="text"], input[type="date"]{
+    color: rgb(147, 52, 214);
+    font-size: 0.8em;
+}
+
