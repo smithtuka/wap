@@ -38,7 +38,7 @@ window.onload = function(){
 
                      // may turn this into a function on itself - may try to use streams to push out this list
                         function printRecords(){
-                            let textAreaText = "NAME" + "\t\t" + "AMOUNT" + "\t\t" + "ACCOUNT TYPE"+"\n" ;
+                            let textAreaText = "NAME" + "\t\t" + "AMOUNT" + "\t\t\t" + "ACCOUNT TYPE"+"\n" ;
                         for(const a of accountInfoList){
                             let item = "\n" + a.fName + "\t\t" + " "+ a.currency+a.amount + "\t\t" + a.accType +"\n";
                             textAreaText =    textAreaText+item;     
